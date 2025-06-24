@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://endearing-ambition-production.up.railway.app';
+const API_URL = 'http://localhost:8080';
 
 // Create axios instance with default config
 const api = axios.create({

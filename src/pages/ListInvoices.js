@@ -19,7 +19,7 @@ const ListInvoices = () => {
           return;
         }
 
-        const response = await axios.get('https://endearing-ambition-production.up.railway.app/api/invoices', {
+        const response = await axios.get('http://localhost:8080/api/invoices', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -40,7 +40,7 @@ const ListInvoices = () => {
     if (window.confirm('Are you sure you want to delete this invoice?')) {
       try {
         const token = localStorage.getItem('token');
-        await axios.delete(`https://endearing-ambition-production.up.railway.app/api/invoices/${id}`, {
+        await axios.delete(`http://localhost:8080/api/invoices/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
