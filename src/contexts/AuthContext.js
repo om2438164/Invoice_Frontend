@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchUser = async (token) => {
     try {
-      const response = await axios.get('http://localhost:8080/api/auth/user', {
+      const response = await axios.get('endearing-ambition-production.up.railway.app/api/auth/user', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -41,7 +41,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (username, password) => {
     try {
-      const response = await axios.post('http://localhost:8080/api/auth/login', {
+      const response = await axios.post('endearing-ambition-production.up.railway.app/api/auth/login', {
         username,
         password,
       });
@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }) => {
 
   const signup = async (userData) => {
     try {
-      const response = await axios.post('http://localhost:8080/api/auth/signup', userData);
+      const response = await axios.post('endearing-ambition-production.up.railway.app/api/auth/signup', userData);
       return response.data;
     } catch (error) {
       console.error('Signup error:', error);
