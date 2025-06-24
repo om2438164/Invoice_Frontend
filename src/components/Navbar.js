@@ -21,7 +21,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center group">
               <IconWrapper icon={FaFileInvoiceDollar} className="h-8 w-8 text-indigo-600 group-hover:text-indigo-700 transition-colors duration-200" />
-              <span className="ml-2 text-gray-900 font-bold text-xl group-hover:text-indigo-600 transition-colors duration-200">Invoice System</span>
+              <span className="ml-2 text-gray-900 font-bold text-xl group-hover:text-indigo-600 transition-colors duration-200">BillFlow</span>
             </Link>
           </div>
 
